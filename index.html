@@ -1,0 +1,284 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda jd_7</title>
+ <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+ <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'>
+  <rect width='100%' height='100%' fill='black'/>
+  <text x='50%' y='50%' font-size='28' font-family='Arial' fill='white' text-anchor='middle' dominant-baseline='middle'>
+    JD
+  </text>
+ </svg>">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .search-bar {
+      margin: 15px auto;
+      text-align: center;
+    }
+    .search-bar input {
+      padding: 8px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .container {
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      padding: 15px;
+      text-align: center;
+    }
+    .product img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+    .product h3 {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .price {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 5px 0;
+      color: #444;
+    }
+    .btn {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-buy {
+      background: #28a745;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tienda jd_7</h1>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Buscar producto..." onkeyup="buscarProducto()">
+  </div>
+
+  <div class="container">
+    <h2>Camisas</h2>
+    <div class="products" id="camisas">
+
+      <!-- CAMISAS -->
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-28d0a8bfee3829a6bf96145b65698b0c/420/420/Shirt/Webp/noFilter">
+        <h3>Christmas Clothes</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/11792502132/Christmas-Clothes" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-dbc0986e144dccef65f3a1057bc41c62/420/420/Shirt/Webp/noFilter">
+        <h3>LA DIETA DEL CABALLO</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/99438527334536/LA-DIETA-DEL-CABALLO" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-9a59fda044ecc157c1661e0799c4b38f/420/420/Shirt/Webp/noFilter">
+        <h3>Red sweater with cat</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/18198600376/Red-sweater-with-cat" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-749d1637f34ee300e6a468f3a8e7b8bb/420/420/Shirt/Webp/noFilter">
+        <h3>Green Hoodie</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/18124096162/Green-Hoodie" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-221baa3845dffcc155a24829738f03f9/420/420/Shirt/Webp/noFilter">
+        <h3>White sweatshirt with fire design</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/18110414224/White-sweatshirt-with-fire-design" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-c2f4a93df80afca1e03427100dce5dec/420/420/Shirt/Webp/noFilter">
+        <h3>Black jacket with white shirt</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/11835569457/Black-jacket-with-white-shirt" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-0c195c0afdee6162efec7e014b298c85/420/420/Shirt/Webp/noFilter">
+        <h3>Black Sweatshirt</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/11884260135/Black-Sweatshirt" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-1adf2ed3d22540f31cb4c0b5ef93183d/420/420/Shirt/Webp/noFilter">
+        <h3>Red sweatshirt with palm trees</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/17900482885/Red-sweatshirt-with-palm-trees" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-4b04732d4c8dcd6b796801f49a4bb03f/420/420/Shirt/Webp/noFilter">
+        <h3>Adicto a las...</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/78383596605121/Adicto-a-las" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-f3cb0c7c1c5ade6363a775f1e54de7f5/420/420/Shirt/Webp/noFilter">
+        <h3>White sweatshirt with irregular shapes</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/80801008520526/White-sweatshirt-with-irregular-shapes" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-d7e3974eff8939f95c22380255c8fb23/420/420/Shirt/Webp/noFilter">
+        <h3>Plain Black White Hoodie</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/12911146633/Plain-Black-White-Hoodie" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-a2720f1fb5ee29a7d57af43ea92d1660/420/420/Shirt/Webp/noFilter">
+        <h3>Halloween</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/127771171839555/Halloween" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-e43003000e685471d7590ec02b99f362/420/420/Shirt/Webp/noFilter">
+        <h3>Bear face sweatshirt</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/17899516998/bear-face-sweatshirt" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-bd096abf32a5757eed860fd0b45f8d97/420/420/Shirt/Webp/noFilter">
+        <h3>Christmas elf</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/11793114308/Christmas-elf" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+    </div>
+
+    <h2>Pantalones</h2>
+    <div class="products" id="pantalones">
+
+      <!-- PANTALONES -->
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-8aa1cf120417e3ef95adccca7b40c2f7/420/420/Pants/Webp/noFilter">
+        <h3>Pants Christmas</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/11834518273/Pants-Christmas" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-3018d2ef4f726fc63ad0ebfc5c6de063/420/420/Pants/Webp/noFilter">
+        <h3>Pants Christmas</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/15405796457/Pants-Christmas" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-e6a90d71d96c2c4f64f7ea7b3c769649/420/420/Pants/Webp/noFilter">
+        <h3>White jeans</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/13072503354/White-jeans" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-b2c5c937eed1dc7134e4f33f8f2ad513/420/420/Pants/Webp/noFilter">
+        <h3>Pants Christmas</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/11875463615/Pants-Christmas" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-aa306faf8534b3b0aabdce75567b5917/420/420/Pants/Webp/noFilter">
+        <h3>Halloween Pants</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/101048833344024/HALLOWEEN" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-df12757a9129c7313698667ec7ff50af/420/420/Pants/Webp/noFilter">
+        <h3>Pants Christmas</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/11872362929/Pants-Christmas" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-9605384c3fbc2a83de94cb750a6923b2/420/420/Pants/Webp/noFilter">
+        <h3>Black jeans</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/12877101065/Black-jeans" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+      <div class="product">
+        <img src="https://tr.rbxcdn.com/180DAY-32b254b32d5874405ef7aa4b080b7da5/420/420/Pants/Webp/noFilter">
+        <h3>Pants Christmas Elf</h3>
+        <p class="price">5 Robux</p>
+        <a href="https://www.roblox.com/catalog/11834521879/Pants-Christmas-Elf" target="_blank" class="btn btn-buy">BUY</a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function buscarProducto() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let productos = document.getElementsByClassName("product");
+
+      for (let i = 0; i < productos.length; i++) {
+        let nombre = productos[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+        if (nombre.includes(input)) {
+          productos[i].style.display = "block";
+        } else {
+          productos[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+
